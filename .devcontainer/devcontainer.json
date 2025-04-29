@@ -1,0 +1,25 @@
+{
+    "name": "Python_lab_2",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-vscode.cpptools",
+          "ms-vscode.cmake-tools",
+          "ms-vscode.cpptools-extension-pack"
+        ],
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "bash"
+        }
+      }
+    },
+    "mounts": [
+      "source=${localWorkspaceFolder}/Lab_Python_IndiaHouseDS,target=/app/python_volume,type=bind,consistency=cached"
+    ],
+    "remoteUser": "root",
+    "features": {}
+  }
+  
